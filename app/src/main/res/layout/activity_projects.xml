@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content2"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_main"
+        android:gravity="start"
+        android:id="@+id/toolbarProjects"
+        android:title="Main Fragment"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:background="@color/RecyclerAndTabs"
+        android:outlineAmbientShadowColor="@color/toolbar_main"
+        android:outlineSpotShadowColor="@color/like_a_chip"
+        app:tabTextColor="@color/podrobnosti"
+        app:tabSelectedTextColor="@color/zagolovki"
+        app:tabRippleColor="@color/like_a_chip"
+        app:tabIndicatorColor="@color/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed" />
+
+    <com.apps.gragas.storydirector.Tools.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20b2aa</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="accent_material_light_1">#b48939</color>
+    <color name="primary_material_dark_1">#343333</color>
+    <color name="primary_material_light">#aac2b0</color>
+    <color name="background_material_light">#92d2d6</color>
+    <color name="foreground_material_light">#000000</color>
+    <color name="primary_dark_material_light">#757575</color>
+    <color name="primary_material_light_1">#aac2b0</color>
+    <color name="primary_material_light_2">#74acad</color>
+    <color name="primary_material_light_3">#aac2b0</color>
+    <color name="list_items_1">#FFFAFA</color>
+    <color name="float_action_bar_1">#DC143C</color>
+    <color name="float_action_bar_2">#F44336</color>
+    <color name="accent_material_light">#88e4e4</color>
+    <color name="ripple_buttons_1">#B22222</color>
+    <color name="colorMain1">#20b2aa</color>
+    <color name="buttonNeutral">#696969</color>
+    <color name="buttonPositive">#1E90FF</color>
+    <color name="buttonAlarm">#FF4500</color>
+    <color name="toolbar_main">#B09F8D</color>
+    <color name="editable_fields">#DFCDB4</color>
+    <color name="podrobnosti">#5D5853</color>
+    <color name="zagolovki">#B22222</color>
+    <color name="DimGray">#696969</color>
+    <color name="mainColorField">#FAF0E6</color>
+    <color name="RecyclerAndTabs">#FAEBD7</color>
+    <color name="like_a_chip">#EBD6A1</color>
+
+</resources>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">StoryTeller</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="test1">test1</string>
+    <string name="test2">test2</string>
+
+    <string name="mainInformation">О проекте</string>
+    <string name="mainHero">Главный герой (ГГ)</string>
+    <string name="mainGoal">Цель ГГ</string>
+    <string name="mainAntag">Главный злодей (ГЗ)</string>
+    <string name="whatHappensIf">Что случится, если ГГ потерпит поражение</string>
+    <string name="mainQuestionGlobal">Глобальная цель ГГ</string>
+    <string name="mainQuestionPersonal">Персональная цель ГГ</string>
+    <string name="mainQuestionPrivate">Личная цель ГГ</string>
+    <string name="mainTheme">Тема произведения</string>
+    <string name="mainContreTheme">Контртема</string>
+    <string name="mainSyntez">Синтез темы и контртемы произведения</string>
+    <string name="character">Имя персонажа</string>
+    <string name="character_sex">Пол</string>
+    <string name="character_old">Возраст</string>
+    <string name="character_physics">Физическое состояние</string>
+    <string name="character_look">Внешний вид</string>
+    <string name="character_creed">Кредо, взгляд на жизнь</string>
+    <string name="character_creedHint">Например: всех денег не заработаешь, жизнь - игра, против всех не попрешь, Бог все видит ...</string>
+    <string name="character_sexHint">Введите пол</string>
+    <string name="character_oldHint">Укажите возраст</string>
+    <string name="character_lookHimself">Оценка персонажем своей внешности</string>
+    <string name="character_lookHimselfHint">Как видит себя со стороны, доволен ли своей внешностью</string>
+    <string name="character_physicsHint">Физическое развитие, особенности организма</string>
+    <string name="heroLookHint">Описание внешности персонажа</string>
+    <string name="parents_0_10">Родители</string>
+    <string name="parents_0_10Hint">Жил с одним из родителей? Или с бабушкой, дядей, тётей? Чем зарабатывали на хлеб родители?</string>
+    <string name="persona_0_10Hint">Был самостоятельным ребенком? Каким характером обладал уже в этом возрасте?</string>
+    <string name="persona">Личность</string>
+    <string name="school_friends_0_10">Школа, сверстники</string>
+    <string name="school_friends_0_10Hint">Как давалась учёба, отношение со сверстниками, родителями, учителями?</string>
+    <string name="intesrests_10_18">Интересы</string>
+    <string name="intesrests_10_18Hint">Спорт, учеба, социальные и политические проблемы? Кружки после школы?</string>
+    <string name="studing_10_18">Школа</string>
+    <string name="studing_10_18Hint">Нравилось ли учиться? Какие предметы давались легче?</string>
+    <string name="relationship_10_18">Отношения</string>
+    <string name="relationship_10_18Hint">Сколько было друзей? любовный опыт? отношения со сверстниками?</string>
+    <string name="parents_elders_10_18">Родители и наставники</string>
+    <string name="parents_elders_10_18Hint">Отношения с родителями, с учителями?</string>
+    <string name="job_10_18">Работа</string>
+    <string name="job_10_18Hint">Приходилось ли подрабатывать после школы?</string>
+    <string name="events_10_18">Важные события</string>
+    <string name="events_10_18Hint">Какие события могли оставить в его душе эмоциональный след?</string>
+    <string name="intesrests_18_25">Интересы</string>
+    <string name="intesrests_18_25Hint">Хобби? политика?</string>
+    <string name="studing_18_25">Учеба</string>
+    <string name="studing_18_25Hint">Университет? Специальность? Член студенческого клуба?</string>
+    <string name="relationship_18_25">Отношения</string>
+    <string name="relationship_18_25Hint">Был ли в это время влюблен? семейное положение?</string>
+    <string name="parents_18_25">Родители</string>
+    <string name="parents_18_25Hint">Отношения с родителями, наставником</string>
+    <string name="events_18_14">Важные события</string>
+    <string name="job_colleges">Отношения с коллегами</string>
+    <string name="job_collegesHint">Доверительные, плохие, хорошие, натянутые? Зависть, гнев, не сошлись характерами?</string>
+    <string name="job_boss">Отношения с руководителем</string>
+    <string name="job_what">Обязанности</string>
+    <string name="job_whatHint">Выполняемые обязанности, в чем заключается работа?</string>
+    <string name="job_pleasure">Удовлетворенность</string>
+    <string name="job_pleasureHint">Доволен ли работой? Нет желания сменить профессию или место работы?</string>
+    <string name="family">Семейное положение</string>
+    <string name="familyHint">Холост, женат, вдовец, разведен или расстался с половинкой? Дети?</string>
+    <string name="startRelationship">Начало отношений</string>
+    <string name="startRelationshipHint">Где познакомились; супруга из того же окружения, или из другого слоя общества.</string>
+    <string name="nowRelationship">Текущее положение в отношениях</string>
+    <string name="nowRelationshipHint">Крепок ли брак (отношения)?</string>
+    <string name="leisure">Досуг</string>
+    <string name="leisureHint">Много ли общих друзей? Общее хобби? Отдыхают вместе или порознь?</string>
+    <string name="adulter">Адюльтер</string>
+    <string name="adulterHint">Есть ли факт измен одной из сторон?</string>
+    <string name="conflicts">Конфликты</string>
+    <string name="conflictsHint">Есть ли конфликты, в особенности при решении важных вопросов (рождение ребенка, дорогостоящие покупки)?</string>
+    <string name="leisureSelft">Свободое время</string>
+    <string name="leisureSelftHint">Чем персонаж занят в свободное время?</string>
+    <string name="hobbie">Хобби</string>
+    <string name="hobbieHint">Хобби, увлечения, интересы?</string>
+    <string name="sports">Отношения к спорту</string>
+    <string name="sportsHint">Нравится ли спорт как участнику или как зрителю?</string>
+    <string name="role_character">Роль в истории</string>
+    <string name="theme_or_not">Сторона в истории:</string>
+
+    <string-array name="sex_array">
+        <item>Мужской</item>
+        <item>Женский</item>
+        <item>Не указано</item>
+    </string-array>
+
+    <string-array name="side_array">
+        <item>Тема</item>
+        <item>Контртема</item>
+        <item>Не указано</item>
+    </string-array>
+
+    <string-array name="role_array">
+        <item>Главный герой</item>
+        <item>Злодей</item>
+        <item>Защитник</item>
+        <item>Отражатель</item>
+        <item>Верующий</item>
+        <item>Сомневающийся</item>
+        <item>Чувствующий</item>
+    </string-array>
+
+    <dimen name="between_strokes_charInfo">10dp</dimen>
+    <dimen name="padding_margin">10dp</dimen>
+</resources>

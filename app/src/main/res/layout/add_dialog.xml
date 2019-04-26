@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainColorField"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/addPRName"
+        android:layout_below="@id/newProjectLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Имя проекта..."
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <EditText
+        android:id="@+id/addPRInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addPRName"
+        android:gravity="center"
+        android:hint="Дополнительная информация" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="@android:color/transparent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButton"
+            android:layout_weight="3"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/mainColorField"
+            android:textColor="@color/buttonNeutral"
+            android:text="Отмена"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/mainColorField"
+            android:textColor="@color/buttonPositive"
+            android:layout_weight="3"
+            android:text="Принять"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+</LinearLayout>

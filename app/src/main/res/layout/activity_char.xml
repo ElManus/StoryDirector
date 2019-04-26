@@ -1,0 +1,1757 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content3"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainColorField"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_main"
+        android:gravity="start"
+        android:id="@+id/toolbarCharActivity"
+        android:title="Main Fragment"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbarCharActivity"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Общая информация"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_heroNameCharAct"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:background="@null"
+                android:inputType="none"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+            <!-- Пол -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character_sex"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+
+            <Spinner
+                android:id="@+id/sex_spinner"
+                android:tooltipText="@string/character_physics"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </Spinner>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+            <!-- Role -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/role_character"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider03"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+
+            <Spinner
+                android:id="@+id/role_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </Spinner>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+
+            <!-- Theme or not -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/theme_or_not"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider0112"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+
+            <Spinner
+                android:id="@+id/side_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </Spinner>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+            <!-- возраст -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character_old"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_heroOld"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:inputType="number"
+                android:hint="@string/character_oldHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- физическое состояние -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character_physics"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_heroPhysics"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/character_physicsHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- внешний вид -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character_look"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_heroLook"
+                android:paddingLeft="@dimen/padding_margin"
+                android:hint="@string/heroLookHint"
+                android:paddingRight="@dimen/padding_margin"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- кредо -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character_creed"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_heroCreed"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/character_creedHint"
+                android:background="@null"
+                android:inputType="none"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Оценка внешности -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/character_lookHimself"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_heroLookHimself"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/character_lookHimselfHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Свободное время -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/leisureSelft"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider34"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_leisureSelf"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/leisureSelftHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Хобби -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/hobbie"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider35"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_hobbie"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/hobbieHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Отношения к спорту -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/sports"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider36"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_sports"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/sportsHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- кусок кода для определения аспекта + Возраст 0-10 лет -->
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Внутренний аспект"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Возраст 0 - 10 лет"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <!-- конец кода про аспект с отделением -->
+
+
+            <!-- Родители -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/parents_0_10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/et_parents_0_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/parents_0_10Hint"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Личность -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/persona"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_persona_0_10"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/persona_0_10Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Школа, сверстники -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/school_friends_0_10"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_school_friends_0_10"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/school_friends_0_10Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- кусок  Возраст 10-18 лет -->
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Возраст 10 - 18 лет"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <!-- конец кода про возраст -->
+
+            <!-- Интересы 10-18 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/intesrests_10_18"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_interests_10-18"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/intesrests_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Учеба 10-18 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/studing_10_18"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_school_10-18"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/studing_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Отношения 10-18 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/relationship_10_18"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_relationship_10-18"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/relationship_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Родители и наставники 10-18 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/parents_elders_10_18"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_parents_elders_10-18"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/parents_elders_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Работа 10-18 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/job_10_18"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_job_10-18"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/job_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- События 10-18 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/events_10_18"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_events_10-18"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/events_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- кусок  Возраст 18-15 лет -->
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Возраст 18 - 25 лет"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <!-- конец кода про возраст -->
+
+
+            <!-- Интересы 17-25 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/intesrests_18_25"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider19"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_interests_18-25"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/intesrests_18_25Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- Отношения 17-25 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/relationship_18_25"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider21"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_relationship_18-25"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/relationship_18_25Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Учеба 17-25 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/studing_18_25"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_studing_18-25"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/studing_18_25Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Родители 17-25 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/parents_18_25"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider22"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_parents_18-25"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/parents_18_25Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- События 18-25 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/events_18_14"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider23"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_events_18-25"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/events_10_18Hint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- кусок кода для определения аспекта + карьера -->
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Внешний аспект"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Карьера"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <!-- конец кода про аспект с отделением -->
+
+
+            <!-- Отношения с коллегами -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/job_colleges"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider24"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_job_colleges"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/job_collegesHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- Отношения с руководителем -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/job_boss"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_job_boss"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/job_collegesHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Обязанности -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/job_what"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider26"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_job_what"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/job_whatHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Удовлетворенность -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/job_pleasure"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider27"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_job_pleasure"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/job_pleasureHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- личная жизнь -->
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Личная жизнь"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textColor="@color/zagolovki"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <!-- конец личной жизни -->
+
+            <!-- Семейное положение -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/family"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider28"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_family"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/familyHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Начало отношений -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/startRelationship"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider29"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_startRelationship"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/startRelationshipHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- Текущее положение в отношениях -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/nowRelationship"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider30"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_nowRelationship"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/nowRelationshipHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Досуг -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/leisure"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider31"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_leisure"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/leisureHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- Адюльтер -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/adulter"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider32"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_adulter"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/adulterHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+
+            <!-- Конфликты -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/conflicts"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:textColor="@color/zagolovki"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:id="@+id/divider33"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_conflicts"
+                android:paddingLeft="@dimen/padding_margin"
+                android:paddingRight="@dimen/padding_margin"
+                android:hint="@string/conflictsHint"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/between_strokes_charInfo" />
+            <!-- end of item-->
+
+            <!-- end All List-->
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fab_characters_addCharAct1"
+        android:src= "@drawable/ic_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        app:backgroundTint="@color/toolbar_main"
+        app:rippleColor="@color/ripple_buttons_1"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

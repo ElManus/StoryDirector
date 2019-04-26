@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/main_fragment"
+    android:background="@color/mainColorField"
+    tools:context=".projectsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainInformation"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:gravity="center|center_horizontal|center_vertical"
+                            android:textColor="@color/zagolovki"
+                            android:layout_height="match_parent" />
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_pordobnosti"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:textSize="17dp"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:gravity="center|center_horizontal|center_vertical"
+                            android:textStyle="italic"
+                            android:textColor="@color/podrobnosti"
+                            android:text="Ещё"/>
+
+                    </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/lyt_expandable_podrobnosti"
+                            >
+
+
+                            <View
+                                android:id="@+id/divider12"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="?android:attr/listDivider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Изменен:"
+                                            android:textColor="@color/podrobnosti"
+                                            android:paddingLeft="35dp"
+                                            android:paddingTop="5dp"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingLeft="10dp"
+                                            android:id="@+id/tv_change_date"
+                                            android:textColor="@color/podrobnosti"
+                                            android:text="10:10:10"
+                                            />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Создан:"
+                                    android:textColor="@color/podrobnosti"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/tv_create_date"
+                                    android:textColor="@color/podrobnosti"
+                                    android:text="10:10:10"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Символов в сценах:"
+                                    android:textColor="@color/podrobnosti"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/tv_numberCharacters"
+                                    android:textColor="@color/buttonNeutral"
+                                    android:text="10:10:10"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Слов в сценах:"
+                                    android:textColor="@color/podrobnosti"
+                                    android:paddingLeft="35dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/tv_numberWords"
+                                    android:textColor="@color/buttonNeutral"
+                                    android:text="10:10:10"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainInfo"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="ssss"
+                        android:background="@null"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mainHero_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/mainHero"
+                            android:elevation="4dp"
+                            android:textColor="@color/zagolovki" />
+
+                        <TextView
+                            android:id="@+id/tv_heroPodrobnosti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:paddingLeft="10dp"
+                            android:textSize="17dp"
+                            android:text="Ещё"
+                            android:textColor="@color/podrobnosti"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/et_mainHero"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@null"
+                            android:text="ssss"
+                            android:inputType="none"
+                            android:layout_height="wrap_content" />
+                    
+                    
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:layout_margin="8dp"
+                        android:clickable="false"
+                        app:chipBackgroundColor="@color/like_a_chip"
+                        app:checkedIconEnabled="false"
+                        android:id="@+id/chip_hero"
+                        style="@style/Widget.MaterialComponents.Chip.Entry"
+                        android:layout_height="wrap_content" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/expandable_layout_characters" />
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="@string/mainGoal"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="@color/zagolovki"
+                                    android:layout_weight="6"
+                                    android:layout_height="match_parent" />
+
+                                
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainGoal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/mainAntag"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/zagolovki"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_villiansPodrobnosti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:paddingLeft="10dp"
+                            android:textSize="17dp"
+                            android:text="Ещё"
+                            android:textColor="@color/podrobnosti"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainAntag"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:layout_margin="8dp"
+                        android:clickable="false"
+                        app:checkedIconEnabled="false"
+                        android:id="@+id/chip_villian"
+                        app:chipBackgroundColor="@color/like_a_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Entry"
+                        android:layout_height="wrap_content" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/expandable_layout_villians" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/whatHappensIf"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_whatHappensIf"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainQuestionGlobal"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainQuestionGlobal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainQuestionPersonal"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainQuestionPersonal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainQuestionPrivate"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainQuestionPrivate"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainTheme"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainTheme"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainContreTheme"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider10"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainContreTheme"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/mainSyntez"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/zagolovki"
+                            android:layout_weight="6"
+                            android:layout_height="match_parent" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <View
+                        android:id="@+id/divider11"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/et_mainSyntez"
+                        android:paddingLeft="10dp"
+                        android:background="@null"
+                        android:text="ssss"
+                        android:inputType="none"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fab_edit"
+        android:src= "@drawable/ic_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        app:backgroundTint="@color/toolbar_main"
+        app:rippleColor="@color/ripple_buttons_1"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+
+        />
+
+
+
+</RelativeLayout>
+

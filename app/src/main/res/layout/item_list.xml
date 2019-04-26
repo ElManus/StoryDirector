@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_layout"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    app:cardBackgroundColor="@color/RecyclerAndTabs"
+    android:layout_width="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="8dp"
+                            android:text="111"
+                            android:id="@+id/dateTime"
+                            />
+
+                        <TextView
+                            android:id="@+id/textview2"
+                            android:layout_width="wrap_content"
+                            android:paddingStart="3dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="aaaв"
+                            android:lines = "1"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textStyle="normal"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/t_mainInfo"
+                            android:layout_width="wrap_content"
+                            android:ellipsize="end"
+                            android:lines = "1"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:layout_height="20dp"
+                            android:paddingStart="3dp"
+                            android:text="вавава" />
+
+                    </LinearLayout>
+
+        <TextView
+            android:id="@+id/threeDotsMainList"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:clickable="true"
+            android:paddingRight="10dp"
+            android:text="&#8942;"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <!-- marqueeRepeatLimit = 0  для текстового поля значит, бегущая строка отключена -->
+</androidx.cardview.widget.CardView>

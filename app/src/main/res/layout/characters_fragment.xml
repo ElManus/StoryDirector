@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/mainColorField"
+    android:layout_height="match_parent"
+    android:id="@+id/characters_fragment"
+    tools:context=".projectsActivity">
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/lv_char_frag"
+       ></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fab_characters_add"
+        android:src= "@drawable/plus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        app:backgroundTint="@color/toolbar_main"
+        app:rippleColor="@color/ripple_buttons_1"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+
+        />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorMain1</item>
+    </style>
+    <style parent="Theme.MaterialComponents.Light.NoActionBar" name="ThemeMain1">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainColorField</item>
+        <item name="colorPrimaryDark">@color/like_a_chip</item>
+        <item name="colorAccent">@color/zagolovki</item>
+        <item name="android:statusBarColor">@color/DimGray</item>
+
+</style>
+
+
+</resources>

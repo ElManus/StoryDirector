@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mainColorField"
+    android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/addNewName"
+        android:layout_below="@id/newProjectLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Новое имя проекта..."
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="@android:color/transparent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButtonRename"
+            android:layout_weight="3"
+            android:background="@android:color/transparent"
+            android:textColor="@color/buttonNeutral"
+            android:text="Отмена"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButtonRename"
+            android:background="@android:color/transparent"
+            android:textColor="@color/buttonPositive"
+            android:layout_weight="3"
+            android:text="Принять"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+</LinearLayout>
